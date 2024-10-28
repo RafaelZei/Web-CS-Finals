@@ -1,0 +1,518 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F5F5F5;
+}
+img{
+  width: 100%;
+}
+/* Header/Nav styles */
+header {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .8), rgba(242, 242, 242, 0.2)), url("header1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 35vh;
+    background-color: #F2D5DD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+h1 {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  color: white;
+  font-size: 60px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  opacity: .77;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(rgba(37, 37, 37, 0.7), rgba(1, 1, 1, 0.5));
+  padding: 10px 20px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.logo span {
+  color: white;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 15px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 8px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+ 
+}
+.nav-links a:hover{
+  background-color: #bf3a29;
+}
+
+.signup {
+  background-color: #f64b3c;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Main Content styles */
+
+.main {
+  width: 80%;
+  height: 600px;
+  display: flex;
+  margin: 0 auto;
+  
+}
+
+.main .pic{
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  background-color: white;
+  
+  
+}
+.main .pic img {
+  display: flex;
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 20%;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, .5);
+}
+
+.main .forms{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+
+.input-names {
+  display: flex;
+  justify-content: space-between;
+  padding:5px 0;
+}
+
+.input-names input {
+  width: 49%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-field {
+  margin-bottom: 15px;
+  padding:5px 0;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.create-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4d4d4d;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.create-button:hover {
+  background-color: #3d3d3d;
+}
+
+.login {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Karla", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  
+}
+.login a{
+  text-decoration: none;
+  color: #1771d1;
+  
+}
+.login a:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Karla", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.other-login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.other-login button {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: white;
+}
+
+.other-login button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.google-button {
+  border-color: #ea4335;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.facebook-button {
+  border-color: #3b5998;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+footer{
+  display: flex;
+  height: 20vh;
+  background-color: #000000;
+  border: 1px solid black;
+ 
+}
+
+.footer-content{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+footer p{
+  width: 40%;
+  font-size: 20px;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  opacity: .90;
+  
+}
+
+.pic-footer img{
+  width: 40px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  header {
+    height: auto;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links a {
+    margin: 5px 0;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+
+  .main h2 {
+    font-size: 25px;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .main {
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .main .pic img {
+    width: 100%;
+    height: auto;
+  }
+
+  .forms {
+    padding: 20px;
+  }
+
+  .input-names {
+    flex-direction: column;
+  }
+
+  .input-names input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .other-login {
+    flex-direction: column;
+  }
+
+  .other-login button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .pic-footer img {
+    width: 30px;
+    margin-right: 5px;
+  }
+  footer p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  header {
+    height: 30vh;
+    text-align: center;
+    background-size: cover;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: auto;
+  }
+
+  .main .pic {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .main .pic img {
+    width: 80%;
+    object-fit: cover;
+    border-radius: 20%;
+  }
+
+  .main .forms {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .nav {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    margin: 5px 10px;
+    font-size: 16px;
+  }
+
+  .nav-links a.signup {
+    margin-top: 10px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  footer p {
+    text-align: center;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  header {
+    height: 50vh;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  .main {
+    max-width: 1200px;
+    height: 700px;
+  }
+
+  .main .pic img {
+    width: 80%;
+    height: auto;
+  }
+
+  .nav {
+    width: 70%;
+  }
+
+  .forms {
+    padding: 50px;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+  }
+
+  footer {
+    height: 25vh;
+  }
+
+  footer p {
+    font-size: 24px;
+  }
+}

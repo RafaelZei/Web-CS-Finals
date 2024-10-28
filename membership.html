@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consistent Gym</title>
+    <link rel="stylesheet" href="membershipStyles.css">
+    <script>
+      function BronzePlan() {
+        document.getElementById("diamond").innerHTML="Bronze Plan";
+        document.getElementById("titleDiamond").style.backgroundColor='#4D5559';
+        document.getElementById("priceD1").innerHTML="You Have Successfully Joined <br> <p style=color:#630B0B;>Bronze Plan </p>";
+        document.getElementById("divider1").innerHTML=" ";
+        document.getElementById("content4").innerHTML="<p style=font-size:20px;>Success in fitness is <br>not an overnight event,<br> but the result of steady,<br> daily effort.</p>" ;
+        document.getElementById("content5").innerHTML=" ";
+        document.getElementById("content6").innerHTML=" ";
+        document.getElementById("content7").innerHTML=" ";
+      }
+      function DiamondPlan() {
+        document.getElementById("bronze").innerHTML="Diamond Plan";
+        document.getElementById("titleBronze").style.backgroundColor='#57879F';
+        document.getElementById("priceB1").innerHTML="You Have Successfully Joined<br> <p style=color:#28769D;> Diamond Plan</p>";
+        document.getElementById("divider2").innerHTML=" ";
+        document.getElementById("content1").innerHTML="<p style=font-size:20px;>Progress happens one <br>workout at a time—stay<br> patient, stay <br>persistent.</p>" ;
+        document.getElementById("content2").innerHTML=" ";
+        document.getElementById("content3").innerHTML=" ";
+        
+      }
+      
+    </script>
+    
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo">
+          <img src="logo.png" alt="Consistent Gym Logo">
+          <span>Consistent Gym</span>
+      </div>
+        <div class="nav-links">
+          <a href="index.html">HOME</a>
+          <a href="#">MEMBERSHIP</a>
+          <a href="Class.html">CLASSES</a>
+          <a href="signUp.html" class="signup">SIGN UP</a>
+        </div>
+    </div>
+    <h1>Be Consistent</h1>
+  </header>
+
+  <div class="main">
+    <h2>Choose your plan</h2>
+    <div class="plan">
+      <div class="bronze-plan">
+        <div id="titleBronze">
+          <h2 id="bronze">
+            Bronze Plan
+          </h2>
+        </div>
+        <div id="priceBronze">
+          <p id="priceB1">For as low as<br><span id="priceB1">PHP 500</span> /mth</p>
+        </div>
+        <div id="divider">
+          <p id="divider2">Access</p>
+        </div>
+        <div id=" contentbronze">
+          <p id="content1">Basic gym equipment</p>
+          <p id="content2">Public  Lockers</p>
+          <p id="content3">One Gym Locations</p>
+        </div>
+          <button class="bronzeButton" onclick="BronzePlan()">Join Plan</button>
+      </div>
+      <div class="diamond-plan">
+        <div id="titleDiamond">
+          <h2 id="diamond">
+            Diamond Plan
+          </h2>
+        </div>
+        <div id="priceDiamond">
+          <p id="priceD1">For as low as<br><span id="priceD2">PHP 2500</span> /mth</p>
+        </div>
+        <div id="divider">
+          <p id="divider1">Access</p>
+        </div>
+        <div id=" contentDiamond">
+          <p id="content4">All gym equipment</p>
+          <p id="content5">Personal Lockers</p>
+          <p id="content6">All Gym Locations</p>
+          <p id="content7">Personal Gym Trainer</p>
+        </div>
+          <button class="DiamondButton" id="diamondButton" onclick="DiamondPlan()">Join Plan</button>
+      </div>
+    </div>
+    
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>BE CONSISTENT LIKE A CHAMPION</p>
+      <div class="pic-footer">
+        <img src="facebook.png" alt="FB">
+        <img src="instagram.png" alt="IG">
+        <img src="gmail.png" alt="gmail">
+      </div>
+    </div>
+    
+  </footer>
+</body>
+</html>
